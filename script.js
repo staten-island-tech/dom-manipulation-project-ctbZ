@@ -7,3 +7,6 @@ const button = document.getElementById("btn")
 const text = document.querySelector("#text")
 
 console.log(DOMSelectors.button);
+document.getElementById("form").addEventListener("submit", function (e) {
+    e.preventDefault()
+})
