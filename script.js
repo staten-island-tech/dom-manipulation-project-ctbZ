@@ -1,12 +1,21 @@
+// const DOMSelectors = {
+//     button:document.getElementById("btn"),
+//     text: documument.querySelector("#text"),
+// };
+// console.log()
+// const button = document.getElementById("btn")
+// const text = document.querySelector("#text")
+
 const DOMSelectors = {
-    button:document.getElementById("btn"),
-    text: documument.querySelector("#text"),
+    button: document.getElementById("btn"),
+    form: document.getElementById("form"),
 };
-console.log()
-const button = document.getElementById("btn")
-const text = document.querySelector("#text")
 
 console.log(DOMSelectors.button);
-document.getElementById("form").addEventListener("submit", function (e) {
-    e.preventDefault()
-})
+DOMSelectors.form.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    output();
+    clearInput();
+    // e for event
+});
+
