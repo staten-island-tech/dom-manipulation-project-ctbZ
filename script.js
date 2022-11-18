@@ -1,18 +1,23 @@
 const DOMSelectors = {
-    button:document.getElementById("btn"),
-    text: documument.querySelector("#text"),
+    button: document.getElementById("btn"),
+    title: document.getElementById("title"),
+    text: document.getElementById("text"),
+    form: document.getElementById("form"),
+    url: document.getElementById("form"),
+    display: document.getElementById("display"),
 };
-console.log()
-
-const button = document.getElementById("btn")
-const text = document.querySelector("#text")
-
-function createcard(){
-    
+function createcard() {
+    DOMSelectors.form.insertAdjacentHTML(
+        "beforeend",
+        `
+        
+        `
+    )
 }
 
-
-console.log(DOMSelectors.button);
-document.getElementById("form").addEventListener("submit", function (e) {
-    e.preventDefault();
-});
+function clearInput() {
+    DOMSelectors.title.value = "";
+    DOMSelectors.text.value = "";
+    DOMSelectors.url.value = "";
+  } 
+//   blank inside "" to empty the input box

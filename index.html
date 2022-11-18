@@ -3,23 +3,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.js">
     <title>Document</title>
-    <script src="script.js"></script>
 </head>
 <body>
-    <div id="BBB">
-<p id="text">this is a BBB</p>
+    <section class="form-parent">
+        <form id="form">
+            <div class="form-child">
+                <label for="title">title</label>
+                <input type="text" class="text-box" id="title" required>
+            </div>
+            <div class="form-child">
+                <label for="text">text</label>
+                <input type="text" class="text-box" id="text" required>
+            </div>
+            <div class="form-child">
+                <label for="url">url</label>
+                <input type="text" class="text-box" id="url" required>
+            </div>
+            <div class="form-input">
+                <input type="submit" value="submit" class="btn" id="btn">
+            </div>
+        </form>
+    </section>
+    <section class="display" id="display">
 
-<button type="button" id="btn">Click!</button>
-<ul>
-    <li class="point">1</li>
-    <li class="point">2</li>
-    <li class="point">3</li>
-</ul>
-    </div>
-<form action="">
-    <input type="text">
-    <input type="submit">
-</form>
+    </section>
 </body>
 </html>
