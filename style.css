@@ -6,6 +6,14 @@ body,
   padding: 0;
   margin: 0;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(45deg, rgb(255, 156, 230), rgb(106, 197, 250));
+  background-size: 100% 100%;
+  animation: gradient 5s ease infinite;
+  text-align: center;
+  color: white;
+}
 :root {
   /* Type */
   --h1: 7.594rem;
@@ -88,11 +96,25 @@ h5 {
 }
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0.2);
+  box-shadow: 0 0 0.4rem rgb(192, 185, 185), 
+  0 0 0.9rem rgb(214, 205, 205),
+  0 0 0.9rem rgb(119, 247, 208), 
+  0 0 1.4rem rgb(98, 213, 248), 
+  0 0 1.8rem rgb(0, 217, 255),
+  0 0 2.3rem rgb(134, 144, 151), 
+  0 0 2.3rem rgb(52, 195, 252), 
+  0 0 2.8rem #0fa;
 }
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0.2);
+  box-shadow: 0 0 0.4rem rgb(192, 185, 185), 
+  0 0 0.9rem rgb(214, 205, 205),
+  0 0 0.9rem rgb(119, 247, 208), 
+  0 0 1.4rem rgb(98, 213, 248), 
+  0 0 1.8rem rgb(0, 217, 255),
+  0 0 2.3rem rgb(134, 144, 151), 
+  0 0 2.3rem rgb(52, 195, 252), 
+  0 0 2.8rem #0fa;
 }
 
 .display {
@@ -110,12 +132,12 @@ h5 {
   width: 26%;
   height: 55rem;
   margin: 1rem auto;
-  background-color: #131313;
+  background-color: #ffffff;
   color: white;
   align-items: center;
 }
 .display-img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 .display-artist,
@@ -131,3 +153,75 @@ h5 {
   background-color: red;
   color: white;
 }
+.flex-container {
+  width: 100%;
+  height: auto;
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif; 
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+h1{
+  display:inline-block;
+  font-size: 4.5vw;
+  letter-spacing: 1rem;
+  color: #fff;
+  text-shadow: 
+  0 0 0.4rem rgb(192, 185, 185), 
+  0 0 0.9rem rgb(214, 205, 205),
+  0 0 0.9rem rgb(119, 247, 208), 
+  0 0 1.4rem rgb(98, 213, 248), 
+  0 0 1.8rem rgb(0, 217, 255),
+  0 0 2.3rem rgb(134, 144, 151), 
+  0 0 2.3rem rgb(52, 195, 252), 
+  0 0 2.8rem #0fa;
+  animation: glow 3s ease infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes glow {
+  25% {
+      text-shadow:
+      0 0 0.6rem rgb(192, 185, 185), 
+      0 0 1.1rem rgb(214, 205, 205),
+      0 0 1.1rem rgb(119, 247, 208), 
+      0 0 1.7rem rgb(98, 213, 248), 
+      0 0 2.2rem rgb(0, 217, 255),
+      0 0 2.3rem rgb(134, 144, 151), 
+      0 0 2.3rem rgb(52, 195, 252), 
+      0 0 3.5rem #0fa;
+  }
+  50% {
+   text-shadow: 
+   0 0 0.3rem rgb(192, 185, 185), 
+   0 0 0.8rem rgb(214, 205, 205),
+   0 0 0.9rem rgb(119, 247, 208), 
+   0 0 1.3rem rgb(98, 213, 248), 
+   0 0 1.5rem rgb(0, 217, 255),
+   0 0 2rem rgb(134, 144, 151), 
+   0 0 2rem rgb(52, 195, 252), 
+   0 0 2.5rem #0fa;
+  }
+  75% {
+   text-shadow:
+   0 0 0.6rem rgb(192, 185, 185), 
+   0 0 1.1rem rgb(214, 205, 205),
+   0 0 1.1rem rgb(119, 247, 208), 
+   0 0 1.7rem rgb(98, 213, 248), 
+   0 0 2.2rem rgb(0, 217, 255),
+   0 0 2.3rem rgb(134, 144, 151), 
+   0 0 2.3rem rgb(52, 195, 252), 
+   0 0 3.5rem #0fa;
+}
+  }
